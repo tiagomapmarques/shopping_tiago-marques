@@ -1,52 +1,36 @@
 [
   {
-    "name": "A",
-    "description": "",
+    "name": "Tanya Taylor",
+    "description": "'Baby Doll' stripped peplum top",
     "image": "11730556_8194858_255.jpg",
-    "price": "",
+    "price": "1585",
     "discount": {
-      "amount": "",
-      "price": ""
+      "amount": "50",
+      "price": "500"
     }
   },
   {
-    "name": "B",
-    "description": "",
+    "name": "Coach 1941",
+    "description": "origami pleat houndstooth trousers cenas maradas",
     "image": "11734827_8179707_255.jpg",
-    "price": "",
-    "discount": {
-      "amount": "",
-      "price": ""
-    }
+    "price": "437"
   },
   {
-    "name": "C",
-    "description": "",
+    "name": "Vionnet",
+    "description": "bicolour pleated skirt",
     "image": "11735583_8161812_255.jpg",
-    "price": "",
-    "discount": {
-      "amount": "",
-      "price": ""
-    }
+    "price": "682"
   },
   {
-    "name": "D",
-    "description": "",
+    "name": "Forte Couture",
+    "description": "varsity bomber jacket",
     "image": "11736243_8231608_255.jpg",
-    "price": "",
-    "discount": {
-      "amount": "",
-      "price": ""
-    }
+    "price": "480"
   },
   {
-    "name": "E",
-    "description": "",
+    "name": "Fendi",
+    "description": "fox fur collar coat",
     "image": "11745743_8214817_255.jpg",
-    "price": "",
-    "discount": {
-      "amount": "",
-      "price": ""
-    }
+    "price": "480"
   }
 ]

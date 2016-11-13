@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { Http, Response } from '@angular/http';
 import { Observable } from 'rxjs/Observable';
 
-import 'rxjs/add/observable/throw';
+// import 'rxjs/add/observable/throw';
 // import 'rxjs/add/operator/do';  // for debugging
 
 import { Product } from '../../models/index';
@@ -26,7 +26,23 @@ export class ProductListService {
    */
   public get(): Observable<Product[]> {
     return this.http.get('/assets/data.json')
-                    .map((res: Response) => res.json())
+                    .map((res: Response) => {
+                      const json: any[] = res.json();
+                      return json.map((item: any): Product => {
+                        return {
+                          name: item.name,
+                          description: item.description,
+                          image: item.image,
+                          price: +(item.price),
+                          discount: item.discount ?
+                            {
+                              price: +(item.discount.price),
+                              amount: +(item.discount.amount)
+                            }
+                            : null
+                        }
+                      });
+                    });
                     // .do(data => console.log('server data:', data))  // debug
                     // .catch(this.handleError);
   }
