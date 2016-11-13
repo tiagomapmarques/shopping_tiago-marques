@@ -30,6 +30,7 @@ export class ProductListService {
                       const json: any[] = res.json();
                       return json.map((item: any): Product => {
                         return {
+                          id: item.id,
                           name: item.name,
                           description: item.description,
                           image: item.image,

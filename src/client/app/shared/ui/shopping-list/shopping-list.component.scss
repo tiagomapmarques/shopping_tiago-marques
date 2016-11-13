@@ -1,0 +1,12 @@
+@import 'src/client/css/fonts';
+
+h2 {
+  width: calc(100% - 30px);
+  background-color: white;
+  margin: 0;
+  padding: 15px;
+  padding-left: 20px;
+  font-family: 'PolarisBold';
+  font-size: 12.5px;
+  line-height: 19px;
+}
