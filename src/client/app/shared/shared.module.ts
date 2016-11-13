@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
-import { ProductComponent, ProductListComponent, ShoppingListComponent } from './ui/index';
+import { ProductComponent, ProductListComponent, ShoppingListComponent, ShoppingSummaryComponent } from './ui/index';
 import { ProductListService } from './services/index';
 import { ShoppingBagState } from './states/index';
 
@@ -13,8 +13,8 @@ import { ShoppingBagState } from './states/index';
 
 @NgModule({
   imports: [CommonModule, RouterModule],
-  declarations: [ProductComponent, ProductListComponent, ShoppingListComponent],
-  exports: [ProductComponent, ProductListComponent, ShoppingListComponent,
+  declarations: [ProductComponent, ProductListComponent, ShoppingListComponent, ShoppingSummaryComponent],
+  exports: [ProductComponent, ProductListComponent, ShoppingListComponent, ShoppingSummaryComponent,
     CommonModule, FormsModule, RouterModule]
 })
 export class SharedModule {
