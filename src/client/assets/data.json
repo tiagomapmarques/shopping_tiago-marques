@@ -1,6 +1,52 @@
 [
-  "Edsger Dijkstra",
-  "Donald Knuth",
-  "Alan Turing",
-  "Grace Hopper"
+  {
+    "name": "A",
+    "description": "",
+    "image": "11730556_8194858_255.jpg",
+    "price": "",
+    "discount": {
+      "amount": "",
+      "price": ""
+    }
+  },
+  {
+    "name": "B",
+    "description": "",
+    "image": "11734827_8179707_255.jpg",
+    "price": "",
+    "discount": {
+      "amount": "",
+      "price": ""
+    }
+  },
+  {
+    "name": "C",
+    "description": "",
+    "image": "11735583_8161812_255.jpg",
+    "price": "",
+    "discount": {
+      "amount": "",
+      "price": ""
+    }
+  },
+  {
+    "name": "D",
+    "description": "",
+    "image": "11736243_8231608_255.jpg",
+    "price": "",
+    "discount": {
+      "amount": "",
+      "price": ""
+    }
+  },
+  {
+    "name": "E",
+    "description": "",
+    "image": "11745743_8214817_255.jpg",
+    "price": "",
+    "discount": {
+      "amount": "",
+      "price": ""
+    }
+  }
 ]
