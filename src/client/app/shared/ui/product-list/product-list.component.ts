@@ -4,9 +4,6 @@ import { ProductListService } from '../../services/index';
 import { ShoppingBagState } from '../../states/index';
 import { Product } from '../../models/index';
 
-/**
- * This class represents the lazy loaded HomeComponent.
- */
 @Component({
   moduleId: module.id,
   selector: 'sd-product-list',
@@ -15,9 +12,9 @@ import { Product } from '../../models/index';
 })
 
 export class ProductListComponent implements OnInit, OnDestroy {
-  private subscriptions: Subscription[];
   public products: Product[];
   public shoppingBag: string[];
+  private subscriptions: Subscription[];
 
   constructor(
     private productListService: ProductListService,
@@ -48,8 +45,7 @@ export class ProductListComponent implements OnInit, OnDestroy {
   public toggleInBag(productId: string): void {
     if (this.isInBag(productId)) {
       this.shoppingBagState.removeProduct(productId);
-    }
-    else {
+    } else {
       this.shoppingBagState.addProduct(productId);
     }
   }
