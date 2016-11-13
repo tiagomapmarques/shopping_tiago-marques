@@ -2,9 +2,9 @@
 @import 'src/client/css/fonts';
 
 :host {
-  width: 300px;
-  float: right;
-  margin-right: -340px;
+  position: fixed;
+  right: 40px;
+  width: 280px;
   padding: 10px;
   background-color: white;
   font-family: 'PolarisBook';

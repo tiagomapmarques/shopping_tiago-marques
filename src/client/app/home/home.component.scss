@@ -7,5 +7,9 @@
   & > * {
     margin-top: 40px;
     display: block;
+
+    &:last-child {
+      margin-bottom: 40px;
+    }
   }
 }
