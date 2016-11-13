@@ -1,5 +1,5 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { Subscription, Observable } from 'rxjs';
+import { Observable, Subscription } from 'rxjs/Rx';
 import { Product } from '../../models/index';
 import { ShoppingBagState } from '../../states/index';
 import { ProductListService } from '../../services/index';
