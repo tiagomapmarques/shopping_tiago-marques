@@ -1,7 +1,8 @@
-<h2>Your Bag</h2>
+<h2 *ngIf="products && products.length">Your Bag</h2>
 
 <sd-product
   *ngFor="let item of products; let i = index; trackBy: trackByFn"
   [product]="item"
-  isOnBag="true">
+  [isOnBag]="true"
+  (toggled)="toggleInBag($event)">
 </sd-product>

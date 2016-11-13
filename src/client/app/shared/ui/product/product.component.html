@@ -7,5 +7,4 @@
     <span class="discount" *ngIf="product.discount"><span class="highlight">{{product.discount.price}} £</span> | {{product.discount.amount}}% off</span>
   </div>
 </div>
-<button *ngIf="!isOnBag">Add to Bag</button>
-<button *ngIf="isOnBag">Remove from Bag</button>
+<button (click)="toggleInBag()">{{!isOnBag ? 'Add to Bag' : 'Remove from Bag'}}</button>

@@ -3,5 +3,6 @@
 <sd-product
   *ngFor="let item of products; let i = index; trackBy: trackByFn"
   [product]="item"
-  isOnBag="true">
+  [isOnBag]="isInBag(item.id)"
+  (toggled)="toggleInBag($event)">
 </sd-product>

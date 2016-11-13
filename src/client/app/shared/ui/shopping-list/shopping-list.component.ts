@@ -38,4 +38,17 @@ export class ShoppingListComponent implements OnInit, OnDestroy {
   public ngOnDestroy(): void {
     this.subscription.unsubscribe();
   }
+
+  public isInBag(productId: string): boolean {
+    return this.products.filter((product: Product) => product.id == productId).length > 0;
+  }
+
+  public toggleInBag(productId: string): void {
+    if (this.isInBag(productId)) {
+      this.shoppingBagState.removeProduct(productId);
+    }
+    else {
+      this.shoppingBagState.addProduct(productId);
+    }
+  }
 }
