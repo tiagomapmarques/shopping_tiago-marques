@@ -13,4 +13,5 @@ import { Product } from '../../models/index';
 
 export class ProductComponent {
   @Input() product: Product;
+  @Input() isOnBag: boolean;
 }

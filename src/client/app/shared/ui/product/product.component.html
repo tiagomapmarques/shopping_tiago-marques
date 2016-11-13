@@ -1,1 +1,11 @@
-<h3>Product: {{product.name}}</h3>
+<img src="/assets/products/{{product.image}}" alt="{{product.name}}"/>
+<h4>{{product.name}}</h4>
+<div class="description">{{product.description}}</div>
+<div class="price-container">
+  <div class="price-display">
+    <span class="price" [class.strikethrough]="product.discount">{{product.price}} £</span>
+    <span class="discount" *ngIf="product.discount"><span class="highlight">{{product.discount.price}} £</span> | {{product.discount.amount}}% off</span>
+  </div>
+</div>
+<button *ngIf="!isOnBag">Add to Bag</button>
+<button *ngIf="isOnBag">Remove from Bag</button>

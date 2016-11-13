@@ -1,0 +1,72 @@
+@import 'src/client/css/colors';
+@import 'src/client/css/fonts';
+
+:host {
+  background-color: white;
+  color: $color-text;
+  display: inline-block;
+  margin-right: 6px;
+  margin-top: 6px;
+  padding: 20px;
+  width: 255px;
+}
+
+h4, .description, .price-container {
+  text-align: center;
+  margin: 8px 0;
+}
+
+h4 {
+  font-family: 'PolarisCondensed';
+  letter-spacing: 2.2px;
+  text-transform: uppercase;
+}
+
+.description {
+  height: 38px;
+  overflow-y: hidden;
+}
+
+.description, .price-container {
+  font-family: 'PolarisBook';
+}
+
+.price-container {
+
+  .price-display {
+    display: inline;
+    margin: 0 auto;
+  }
+
+  .highlight {
+    color: $color-text-important;
+  }
+
+  .strikethrough {
+    text-decoration: line-through;
+    color: $color-text-light;
+  }
+}
+
+button {
+  width: calc(100% - 50px);
+  background-color: white;
+  border: 1px solid $color-text-light;
+  border-radius: 40px;
+  margin: 10px 25px;
+  margin-top: 22px;
+  line-height: 19px;
+  outline: none;
+  font-family: 'PolarisBold';
+  letter-spacing: 0.1px;
+
+  &:focus {
+    border-color: navy;
+  }
+  &:hover {
+    background-color: $color-hover;
+  }
+  &:active {
+    background-color: $color-click;
+  }
+}
