@@ -1,8 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Observable, BehaviorSubject } from 'rxjs/Rx';
 
-import { Product } from '../models/index';
-
 @Injectable()
 export class ShoppingBagState {
   private state: BehaviorSubject<string[]>;
@@ -25,7 +23,7 @@ export class ShoppingBagState {
 
   public removeProduct(productId: string): void {
     this.get().first().subscribe((products: string[]) => {
-      const index = products.indexOf(productId)
+      const index = products.indexOf(productId);
       if (index >= 0) {
         products.splice(index, 1);
         this.setState(products);

@@ -1,9 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { Product } from '../../models/index';
 
-/**
- * This class represents the lazy loaded HomeComponent.
- */
 @Component({
   moduleId: module.id,
   selector: 'sd-shopping-summary',
