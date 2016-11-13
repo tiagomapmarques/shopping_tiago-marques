@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { ProductListComponent } from '../shared/index';
 
 /**
  * This class represents the lazy loaded HomeComponent.

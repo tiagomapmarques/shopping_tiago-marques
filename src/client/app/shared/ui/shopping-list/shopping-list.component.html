@@ -1,0 +1,7 @@
+<h2>Your Bag</h2>
+
+<sd-product
+  *ngFor="let item of products; let i = index; trackBy: trackByFn"
+  [product]="item"
+  isOnBag="true">
+</sd-product>
